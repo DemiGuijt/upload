@@ -1,0 +1,14 @@
+@media print {
+   button,
+   input {
+    display: none;
+   }
+
+   img {
+    width: 1px;
+   }
+
+   textarea {
+    border: none;
+   }
+}

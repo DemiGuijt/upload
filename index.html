@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+
+<head>
+	<title>Upload text file</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./script.js" defer></script>
+	<link rel="stylesheet" media="print" href="print.css" />
+
+
+	<style type="text/css">
+		@font-face {
+			font-family: NotoSans;
+			src: url(NotoSans-Regular.ttf);
+		}	
+	
+		input {
+			margin-top: 10px;
+		}
+
+		textarea {
+			margin-top: 15px;
+			width: 95%;
+			height: 97%;
+			resize: none;
+			font-family: NotoSans;
+			font-size: 9pt;
+			line-height: 13pt;
+		}
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.overall {
+			margin: 1rem;
+			padding: 2rem 2rem;
+			text-align: center;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+		}
+
+		.left {
+ 			 border: 1px solid black;
+			 height: 910px;
+		}
+
+		.right {
+  			border: 1px solid black;
+			height: 910px;
+		}
+
+		button{
+			position: absolute;
+  			right: 55px;
+
+		}
+		
+	</style>
+</head>
+<html>
+
+<body>
+	<img src="iyrc_Tekengebied 1.png" alt="IYRC" width="300" class="center">
+	<div class="overall">
+		<div class="left">
+			<div>
+				<input type="file">
+				<textarea cols="30" rows="20" placeholder="text will appear here">
+			</textarea>
+			</div>
+			<script src="script.js"></script>
+
+			<div class="uploading">
+
+			</div>
+		</div>
+
+		<div class="right"></div>
+	</div>
+
+	<button onclick="window.print()">Print this page</button>
+</body>
+
+
+
+</html>
